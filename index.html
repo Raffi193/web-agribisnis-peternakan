@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapi Pak Budi | Peternakan Sapi Berkualitas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5F8D4E',
+                        secondary: '#E5D9B6',
+                        accent: '#A4BE7B'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation Component -->
+    <script src="assets/js/components/navbar.js"></script>
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center bg-green-900 overflow-hidden">
+        <img src="banner.jpg" alt="Peternakan Sapi" class="absolute w-full h-full object-cover opacity-70">
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6"> PETERNAKAN PAK BUDI FARM SAPI KURBAN</h1>
+            <p class="text-xl md:text-2xl text-white mb-8">Peternakan sapi modern dengan standar kualitas terbaik di Palembang</p>
+            <a href="#contact" class="bg-primary hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-flex items-center">
+                Hubungi Kami <i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Tentang Peternakan Kami</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Peternakan Modern Berbasis Teknologi</h3>
+                    <p class="text-gray-600 mb-6">Sejak berdiri tahun 2010, peternakan pak Budi telah mengembangkan sistem peternakan sapi terintegrasi dengan teknologi modern untuk menghasilkan sapi berkualitas tinggi.</p>
+                    <p class="text-gray-600 mb-6">Kami memadukan pengetahuan tradisional dengan inovasi terkini dalam bidang peternakan untuk memastikan kesehatan dan kualitas ternak kami.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-secondary p-4 rounded-lg flex-1">
+                            <h4 class="font-bold text-primary mb-2">Visi</h4>
+                            <p class="text-gray-700">Menjadi peternakan sapi terdepan dengan kualitas unggul di Indonesia</p>
+                        </div>
+                        <div class="bg-secondary p-4 rounded-lg flex-1">
+                            <h4 class="font-bold text-primary mb-2">Misi</h4>
+                            <p class="text-gray-700">Menyediakan sapi berkualitas dengan sistem peternakan berkelanjutan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="http://static.photos/agriculture/600x400/2" alt="Kandang Sapi" class="rounded-lg shadow-md h-64 w-full object-cover">
+                    <img src="gambar2.jpg" alt="Sapi di Padang Rumput" class="rounded-lg shadow-md h-64 w-full object-cover">
+                    <img src="http://static.photos/agriculture/600x400/4" alt="Pakan Sapi" class="rounded-lg shadow-md h-64 w-full object-cover">
+                    <img src="gambar3.jpg" alt="Tim Peternakan" class="rounded-lg shadow-md h-64 w-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Profil Pemilik-->]
+    <section id="owner" class="py-20 px-4 bg-secondary/50">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Profil Pemilik</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Mengenal visi dan dedikasi di balik kualitas Sapi Pak Budi Farm</p>
+            <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 md:p-12 border border-accent">
+            <div class="grid md:grid-cols-3 gap-10 items-start">
+                <div class="col-span-1 text-center">
+                    <img src="profil.jpg" alt="Foto Profil Pak Budi" class="w-48 h-48 md:w-full md:h-auto object-cover rounded-full md:rounded-xl mx-auto mb-6 shadow-xl border-4 border-primary/50">
+                    <h3 class="text-2xl font-bold text-primary mb-1">M. Daffa Abhiyasa</h3>
+                    <p class="text-gray-600 font-semibold mb-4">Anak Kepala Peternakan</p>
+                    
+                    <a href="#contact" class="text-sm font-medium text-accent hover:text-primary transition duration-300 inline-flex items-center mt-2">
+                        Hubungi Langsung <i data-feather="external-link" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="md:col-span-2">
+                    <h4 class="text-xl font-bold text-gray-800 mb-3 border-b-2 border-accent pb-2">Perjalanan dan Visi</h4>
+                    <p class="text-gray-700 mb-4 text-justify">
+                        Saya, M. Daffa Abhiyasa, adalah pemilik Peternakan Sapi Pak Budi Farm. Meski saat ini saya masih menempuh studi di UIN Raden Fatah pada Program Studi Manajemen Pendidikan Islam, kecintaan saya terhadap dunia peternakan mendorong saya untuk membangun usaha ini. Peternakan ini saya mulai sejak tahun 2010 dengan tujuan menghadirkan pengelolaan ternak yang lebih baik, mengutamakan kesejahteraan hewan, serta menerapkan praktik yang berkelanjutan. Saya percaya bahwa ilmu yang saya pelajari dapat dipadukan dengan manajemen modern untuk menciptakan peternakan yang lebih profesional, bertanggung jawab, dan bermanfaat bagi masyarakat.
+                    </p>
+                    <p class="text-gray-700 mb-6 italic border-l-4 border-primary pl-4">
+                        "Setiap sapi yang kami rawat adalah cerminan komitmen kami terhadap kualitas, kesehatan, dan keberkahan, inovasi adalah kunci tetapi hati adalah esensinya."
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
+                            <div class="bg-primary p-2 rounded-full mr-3">
+                                <i data-feather="zap" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-800">14+ Tahun Pengalaman</p>
+                                <p class="text-xs text-gray-500">Manajemen Peternakan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
+                            <div class="bg-primary p-2 rounded-full mr-3">
+                                <i data-feather="award" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-800">Sertifikasi Halal & NKV</p>
+                                <p class="text-xs text-gray-500">Terjamin Mutunya</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
+                            <div class="bg-primary p-2 rounded-full mr-3">
+                                <i data-feather="maximize" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-800">Spesialis Sapi Kurban</p>
+                                <p class="text-xs text-gray-500">Fokus Kualitas</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
+                            <div class="bg-primary p-2 rounded-full mr-3">
+                                <i data-feather="leaf" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-800">Sistem Pakan Alami</p>
+                                <p class="text-xs text-gray-500">Pakan Organik & Terbaik</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Produk Unggulan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami menyediakan berbagai jenis sapi berkualitas dengan standar pemeliharaan tinggi</p>
+                <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="sapi simental.jpg" alt="Sapi Simental" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sapi Simental</h3>
+                        <p class="text-gray-600 mb-4">Sapi pedaging dengan pertumbuhan cepat dan kualitas daging premium</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Usia: 1-2 tahun</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Bobot: 400-600 kg</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Pakan: Konsentrat + Hijauan</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="sapi limosin.jpg" alt="Sapi Limosin" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sapi Limosin</h3>
+                        <p class="text-gray-600 mb-4">Sapi impor dengan marbling daging terbaik untuk steak premium</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Usia: 1.5-2.5 tahun</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Bobot: 500-700 kg</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Pakan: Konsentrat khusus</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="sapi bali.jpg" alt="Sapi Bali" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sapi Bali</h3>
+                        <p class="text-gray-600 mb-4">Sapi lokal dengan daya tahan tinggi dan adaptasi iklim tropis</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Usia: 1-3 tahun</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Bobot: 300-450 kg</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-primary mr-2 mt-1"></i>
+                                <span>Pakan: Hijauan utama</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="/pages/products.html" class="inline-flex items-center text-primary font-semibold hover:text-green-700">
+                    Lihat Semua Produk <i data-feather="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Fasilitas Peternakan</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami memiliki fasilitas modern untuk kenyamanan dan kesehatan ternak</p>
+                <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i data-feather="home" class="text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Kandang Modern</h3>
+                            <p class="text-gray-600">Kandang dengan sistem ventilasi optimal, pencahayaan alami, dan lantai yang nyaman untuk ternak.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i data-feather="heart" class="text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Klinik Kesehatan</h3>
+                            <p class="text-gray-600">Fasilitas kesehatan ternak lengkap dengan dokter hewan berpengalaman dan obat-obatan terstandar.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i data-feather="droplet" class="text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Sistem Air Bersih</h3>
+                            <p class="text-gray-600">Pasokan air bersih terus menerus dengan sistem filtrasi untuk kebutuhan minum dan kebersihan ternak.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i data-feather="shield" class="text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Keamanan 24 Jam</h3>
+                            <p class="text-gray-600">Sistem keamanan terpadu dengan CCTV dan petugas jaga untuk melindungi aset peternakan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="gambar4.jpg" alt="Kandang Sapi" class="rounded-lg shadow-md h-48 w-full object-cover">
+                <img src="gambar5.jpg" alt="Pakan Sapi" class="rounded-lg shadow-md h-48 w-full object-cover">
+                <img src="gambar7.jpg" alt="Klinik Hewan" class="rounded-lg shadow-md h-48 w-full object-cover">
+                <img src="gambar2.jpg" alt="Sistem Air" class="rounded-lg shadow-md h-48 w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="gallery" class="py-20 px-4 bg-secondary">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Apa Kata Pelanggan Kami</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/1" alt="Pelanggan" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Budi Santoso</h4>
+                            <p class="text-gray-600 text-sm">Pemilik Restoran</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Kualitas sapi dari Sapi Moo-dern Ranch sangat konsisten. Dagingnya empuk dan beraroma khas, membuat hidangan di restoran saya semakin diminati pelanggan."</p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/2" alt="Pelanggan" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Dewi Lestari</h4>
+                            <p class="text-gray-600 text-sm">Pedagang Pasar</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Sudah 3 tahun bekerjasama dengan peternakan ini. Sapi-sapinya sehat dan pertumbuhannya bagus. Pelayanannya juga sangat profesional."</p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/3" alt="Pelanggan" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Agus Setiawan</h4>
+                            <p class="text-gray-600 text-sm">Peternak</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Saya belajar banyak tentang peternakan modern dari tim Sapi Moo-dern Ranch. Bibit yang saya beli dari mereka tumbuh dengan sangat baik."</p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami siap menjawab pertanyaan dan kebutuhan Anda tentang peternakan sapi</p>
+                <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Informasi Kontak</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i data-feather="map-pin" class="text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Alamat Peternakan</h4>
+                                <p class="text-gray-600">Plaju Darat, Kec. Plaju, Kota Palembang, Sumatera Selatan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i data-feather="phone" class="text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Telepon/WhatsApp</h4>
+                                <p class="text-gray-600">081273174525</p>
+                                <a href="https://wa.me/6281273174525" class="inline-flex items-center text-primary font-semibold mt-2 hover:text-green-700">
+                                    Chat via WhatsApp <i data-feather="arrow-right" class="ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i data-feather="mail" class="text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">info@sapipakbudi.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i data-feather="clock" class="text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Jam Operasional</h4>
+                                <p class="text-gray-600">Senin - Minggu: 08.00 - 17.00 WIB</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Kirim Pesan</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Nomor Telepon</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <script src="assets/js/components/footer.js"></script>
+    <custom-footer></custom-footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
