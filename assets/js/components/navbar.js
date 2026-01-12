@@ -117,8 +117,8 @@ class CustomNavbar extends HTMLElement {
             <nav class="navbar">
                 <div class="nav-container">
                     <a href="/" class="logo">
-                        <img src="http://static.photos/agriculture/100x100/13" alt="Sapi Moo-dern Ranch Logo">
-                        M. Daffa Abhiyasa
+                        <img style="border-radius: 50%;" src="http://static.photos/agriculture/100x100/13" alt="Logo">
+                        Agribisnis Peternakan Sapi
                     </a>
                     
                     <button class="mobile-menu-btn" id="mobileMenuBtn">
